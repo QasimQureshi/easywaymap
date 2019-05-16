@@ -69,3 +69,16 @@ section {
 .features-CTA .cta > p {
   min-height: 200px;
 }
+
+
+/* .quote section */
+
+section.quote {
+  min-height: 400px;
+  background-color: #4283f0;
+}
+
+footer {
+  min-height: 100px;
+  background-color: #ebebeb;
+}
