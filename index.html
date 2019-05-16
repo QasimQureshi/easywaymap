@@ -11,6 +11,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/hover.css">
 
     <title>Hello, world!</title>
   </head>
@@ -18,23 +20,123 @@
   
     <main>
       
-      <section class="above-the-fold">
-        <div class="container">
-          <div class="row">
-            <div class="col-4">
+      <section class="above-the-fold clearfix"> 
+        <div class="login text-center shadow-lg">
+          <div class="logo-container text-center">
+            <img src="assets/images/logo.png" alt="logo">
+          </div>
+          
+          <div class="form-container px-5">
+            <h3 class="h4 pt-5 pb-4 text-secondary">Find the fastest route to your destination</h3>  
+            
+            <div class="location-fields">
+              <form action="#">
+                <div class="form-group row">
+                  <label for="startLocation" class="col-sm-2 col-form-label">
+                    <i class="fas fa-map-marker-alt text-success"></i>
+                  </label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="startLocation" placeholder="Enter Location">
+                  </div>
+                </div>
+                
+                <div class="form-group row">
+                  <label for="startLocation" class="col-sm-2 col-form-label">
+                    <i class="fas fa-map-marker-alt text-danger"></i>
+                  </label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="startLocation" placeholder="Enter Destination">
+                  </div>
+                </div>
+                
+              </form>
             </div>
-            <div class="col-8">
-              <iframe
-                width="100%"
-                height="400px"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDTd2xocV23YOiStWkcfZJeQrfnb99LJyw
-                  &q=Space+Needle,Seattle+WA" allowfullscreen>
-              </iframe>  
-            </div><!--map container ENDs -->
+            
+            <a href="#" class="hvr-grow-shadow btn btn-block btn-primary btn-lg mt-4 text-uppercase font-weight-bold">continue</a>
+            
+            <p class="marketing mt-5 d-block text-left">By clicking the button above you agree to download and install Maps Now and agree to abide by the <a href="#">EULA</a>, <a href="#">Privacy Policy</a>, <a href="#">Endorsement Disclaimer and DMCA Policy</a></p>
+          </div>
+        
+          
+        </div>
+        <div class="map-container">  
+          
+          <iframe 
+            width="100%" 
+            height="550px"
+            frameborder="0" 
+            style="border:0"
+            src="https://www.google.com/maps/embed/v1/view?zoom=11&center=13.7563%2C100.5018&key=AIzaSyDTd2xocV23YOiStWkcfZJeQrfnb99LJyw" 
+            allowfullscreen>
+          </iframe>
+        </div><!--map container ENDs -->
+      </section>
+      
+      
+      <section class="images-CTA pt-3 pb-5">
+        <h2 class="text-center border-bottom pb-3">Enjoy these popular map features from quick links on your New Tab</h2>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-6">
+              <div class="cta row">
+                <div class="col-4">
+                  <img class="img-thumbnail" src="assets/images/placeholder1.png">
+                </div>
+                <div class="col-8">
+                  <h4>Turn-By-Turn Route Navigation</h4>
+                  <p>Map your route correctly with turn-by-turn driving assistance, to ensure you'll never get lost on your way to your destination. Get satellite images, maps & shortest routes to your destination</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="cta row">
+                <div class="col-4">
+                  <img class="img-thumbnail" src="assets/images/placeholder2.png">
+                </div>
+                <div class="col-8">
+                  <h4>Find The Shortest Route</h4>
+                  <p>Pick a route with the least traffic and enjoy a hassle-free commute. Get live traffic updates and plan your journey before you start. An excellent way to avoid traffic congestion.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      
+      
+      <section class="features-CTA">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 cta">
+              <img src="assets/images/streetview.png">
+              <h3>Aerial & Satellite Views</h3>
+              <p>In addition to local traffic conditions, get actual street view (tm) and satellite images to get a clearer picture of your commute. You can also switch to actual images if you're not comfortable with digitally rendered maps. On unknown roads, stay informed about upcoming rest stops, gas stations, and restaurants.</p>
+              
+              <a href="#" class="hvr-grow-shadow px-5 btn btn-lg btn-primary text-uppercase font-weight-bold">Download Now</a>
+            </div>
+            
+            <div class="col-4 cta">
+              <img src="assets/images/trafficlight.png">
+              <h3>Live Traffic Updates</h3>
+              <p>Hate being stuck in traffic? Get live traffic up-dates for your travel route and share traffic conditions with friends and family commuting on the same route. Maps Now shows you all available routes with least to no traffic, from which you can pick the one that suits you best.</p>
+              
+              <a href="#" class="hvr-grow-shadow px-5 btn btn-lg btn-primary text-uppercase font-weight-bold">Download Now</a>
+            </div>
+            
+            <div class="col-4 cta">
+              <img src="assets/images/weather.png">
+              <h3>FREE Weather Information</h3>
+              <p>Along with convenient access to maps and directions, this app also gives you free access to trusted weather information. Get quick up-dates on the daily weather, 6 day forcase, humidity, windspeed and pressure information from weather web links on your New Tab.</p>
+              
+              <a href="#" class="hvr-grow-shadow px-5 btn btn-lg btn-primary text-uppercase font-weight-bold">Download Now</a>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      
+      
+      
       
     </main>
     
@@ -44,5 +146,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

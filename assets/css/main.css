@@ -1,0 +1,71 @@
+/* Above-the-fold section*/
+
+section.above-the-fold {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+section.above-the-fold > .login {
+  width: 500px;
+  float: left;
+  height: 550px;
+/*  z-index: 20;*/
+}
+
+.animatedBtn {
+  transform: translateZ(-400px);
+}
+
+.animatedBtn:hover {
+  
+}
+
+section.above-the-fold > .login > .logo-container {
+  background-color: #eeeeee;
+  height: 80px
+}
+
+section.above-the-fold > .login > .form-container i {
+  font-size: 1.5em;
+}
+
+section.above-the-fold .marketing{
+  font-size: 0.9em;  
+  font-weight: 500;
+  position: relative;
+  top: 20px;
+}
+
+section.above-the-fold .marketing > a {
+  color: black;
+  text-decoration: underline;
+}
+
+
+section.above-the-fold > .map-container {
+  width: calc(100% - 500px);
+  height: 550px;
+  float: right;
+  z-index: 10;
+}
+
+
+/* images-CTA section */
+.images-CTA {
+  background-color: #f3f3f3;
+}
+
+section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+/*features-CTA section*/
+.features-CTA .cta > img {
+  height: 80px;
+  
+}
+
+.features-CTA .cta > p {
+  min-height: 200px;
+}
