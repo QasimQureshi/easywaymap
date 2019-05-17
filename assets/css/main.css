@@ -11,6 +11,21 @@ section.above-the-fold > .login {
 /*  z-index: 20;*/
 }
 
+@media (max-width: 992px) {
+  section.above-the-fold > .login, section.above-the-fold > .map-container {
+    float: none;
+    width: 100% !important;
+  }
+  
+  .features-CTA .cta > p {
+    min-height: unset !important;
+  }
+  
+  .features-CTA .cta > p + a {
+    margin-bottom: 2em;
+  }
+}
+
 .animatedBtn {
   transform: translateZ(-400px);
 }
@@ -79,6 +94,28 @@ section.quote {
 }
 
 footer {
-  min-height: 100px;
   background-color: #ebebeb;
+}
+
+footer > .nav > li.nav-item > a {
+  border-right: 1px solid #ccc;
+  transition: 0.3s linear all;
+}
+
+footer > .nav > li.nav-item > a:hover {
+  color: #555;
+}
+
+footer > .nav > li.nav-item:last-child > a {
+  border-right: none;
+}
+
+footer > .nav > li.nav-item > a {
+  color: #aaa;
+  font-size: 1.1em;
+}
+
+section.quote > .container > p {
+  font-size: 1.5em; 
+  font-weight: 300;
 }
