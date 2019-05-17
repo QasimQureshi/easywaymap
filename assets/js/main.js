@@ -17,6 +17,7 @@ geoip2.city (
   // error
   function(data) {
     // error loading location. Using a generic location
+    mapboxgl.accessToken = 'pk.eyJ1IjoicWFzaW01NyIsImEiOiJjanZzMTN4YmYwbTJoNDRtc3lveTUycjR5In0.NHo5uv7_XQpM7fPEus_M-w';
     var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
