@@ -92,6 +92,12 @@ section.above-the-fold > .login > .form-container i {
   font-size: 1.5em;
 }
 
+section.above-the-fold > .login .form-container > a {
+  width: 340px;
+  height: 80px;
+  font-size: 35px;
+}
+
 section.above-the-fold .marketing{
   font-size: 0.8em;  
   font-weight: 500;
