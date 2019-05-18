@@ -40,6 +40,22 @@ geoip2.city (
     center: [-74.50, 40], // starting position [lng, lat]
     zoom: 9 // starting zoom
     });
+    
+    var geocoder = new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      placeholder: 'Enter Location',
+      mapboxgl: mapboxgl
+      });
+
+      document.getElementById('geocoder1').appendChild(geocoder.onAdd(map));
+    
+    var geocoder2 = new MapboxGeocoder({
+      placeholder: "Enter Destination",
+      accessToken: mapboxgl.accessToken,
+      mapboxgl: mapboxgl
+      });
+
+      document.getElementById('geocoder2').appendChild(geocoder2.onAdd(map));
 })
 
 document.addEventListener('DOMContentLoaded', (event) => {
