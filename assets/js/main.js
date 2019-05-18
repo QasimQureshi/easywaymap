@@ -9,10 +9,26 @@ geoip2.city (
       zoom: 9 // starting zoom
     });
     
-    map.addControl(new MapboxGeocoder({
+//    map.addControl(new MapboxGeocoder({
+//      accessToken: mapboxgl.accessToken,
+//      mapboxgl: mapboxgl
+//      }));
+    
+    var geocoder = new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      placeholder: 'Enter Location',
+      mapboxgl: mapboxgl
+      });
+
+      document.getElementById('geocoder1').appendChild(geocoder.onAdd(map));
+    
+    var geocoder2 = new MapboxGeocoder({
+      placeholder: "Enter Destination",
       accessToken: mapboxgl.accessToken,
       mapboxgl: mapboxgl
-      }));
+      });
+
+      document.getElementById('geocoder2').appendChild(geocoder2.onAdd(map));
 },
   // error
   function(data) {
