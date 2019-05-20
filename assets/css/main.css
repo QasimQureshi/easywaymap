@@ -149,6 +149,8 @@ section {
 section.quote {
   min-height: 400px;
   background-color: #4283f0;
+  background-image: url(../images/backdrop.png);
+  background-size: cover;
 }
 
 footer {
