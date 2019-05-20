@@ -177,3 +177,20 @@ section.quote > .container > p {
   font-size: 1.5em; 
   font-weight: 300;
 }
+
+#geocoder1.geocoder {
+  z-index: 40;
+}
+
+#geocoder2.geocoder {
+  z-index: 20;
+  position: relative;
+}
+
+.location-fields label[for="startLocation"] + div {
+  z-index: 40;
+}
+
+.location-fields label[for="destination"] + div {
+  z-index: 20;
+}

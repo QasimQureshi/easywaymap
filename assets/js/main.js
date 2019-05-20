@@ -17,6 +17,7 @@ geoip2.city (
     var geocoder = new MapboxGeocoder({
       accessToken: mapboxgl.accessToken,
       placeholder: 'Enter Location',
+      flyTo: false,
       mapboxgl: mapboxgl
       });
 
@@ -25,6 +26,7 @@ geoip2.city (
     var geocoder2 = new MapboxGeocoder({
       placeholder: "Enter Destination",
       accessToken: mapboxgl.accessToken,
+      flyTo: false,
       mapboxgl: mapboxgl
       });
 
@@ -44,6 +46,7 @@ geoip2.city (
     var geocoder = new MapboxGeocoder({
       accessToken: mapboxgl.accessToken,
       placeholder: 'Enter Location',
+      flyTo: false,
       mapboxgl: mapboxgl
       });
 
@@ -52,6 +55,7 @@ geoip2.city (
     var geocoder2 = new MapboxGeocoder({
       placeholder: "Enter Destination",
       accessToken: mapboxgl.accessToken,
+      flyTo: false,
       mapboxgl: mapboxgl
       });
 
